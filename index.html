@@ -1,29 +1,149 @@
+<!--
 
-<!DOCTYPE html>
+«A5» Tüm görseller ve metin içeriği figmadan alınmalıdır.
+«A6» Tüm bitmap görseller, sıkıştırma ve optimize işlemi için squoosh kullanılarak optimize edilmelidir.
+
+«B1» İşaretleme index.html dosyasına yazılmalıdır.
+«B2» Düzenin tüm elemanlarının HTML etiketleri ile işaretlemesi yapılmalıdır.
+«B3» Etiketler semantik içeriklerine göre kullanılmalıdır.
+«B4» HTML validator tarafından hatasız olarak kontrol edilmelidir.
+«B5» Biçimlendirme, sayfanın ana yapısını vurgulamak için etiketler içermelidir: <header>, <main> і <footer>.
+«B6» Üstbilgi ve altbilgideki logo bir resim değil, metin içeren bir bağlantı olmalıdır.
+«B7» <nav> etiketi sayfada bir kez kullanılmalıdır(Başlık bölümünde sadece).
+«B8» Başlıktaki kişiler (e-posta ve telefon) <nav> etiketinin dışında yer almalıdır.
+«B9» <h1> etiketi sayfada bir kez kullanılmalıdır.
+«B10» Order Service metnine sahip öğe type="button" olan bir buton olmalıdır.
+«B11» Bölüm başlıkları <h2> etiketi ile işaretlenmelidir.
+«B12» <img> etiketlerinde width niteliği bulunmalıdır (width niteliği: resim genişliğini belirten HTML özniteliği).
+«B13» <img> etiketleri, resimde neyin tasvir edildiğine dair kısa bir açıklama ile doldurulan bir alt niteliğine sahip olmalıdır. Açıklama, metin içeriğinin geri kalanıyla aynı dilde olmalıdır.
+«B14» Resimler figmadan jpg formatında dışa aktarılmalıdır.
+«B15» Benzer öğelerden oluşan gruplar <ul> listelerinde toplanmalıdır.
+
+-->
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-</head>
-<body>
+    <title>Site basligi</title>
+  </head>
+
+  <body>
+    <!--header -->
     <header>
-        <h1>Başlık Alanı</h1>
-        <p>Header içeriği burada.</p>
+      <nav>
+        <!-- Logo burada yer almali -->
+        <!--Metin iceren baglanti ile studio portfolio ve contacts girilmeli-->
+        <ul>
+          <li><img src="" alt="logo" /></li>
+          <li><a href="#">Studio</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <!-- e posta ve telefon buraya gelecek nav disinda sirasiz liste olsun 
+ -->
+      <ul>
+        <li><a href="#">info@devstudio.com</a></li>
+        <li><a href="#">+11(000) 111-11-11</a></li>
+      </ul>
     </header>
-
+    <!--header is over -->
+    <!--main -->
     <main>
-        <h2>Ana İçerik</h2>
-        <p>Main içerik burada.</p>
+      <!-- hero image efekti burada olusturulacak-->
+      <section>
+        <h1>Effective Solutions for Your Business</h1>
+        <div>
+          <button type="button">Order Service</button>
+        </div>
+      </section>
+      <!--Section 1 burada olusturulacak-->
+      <section>
+        <div>
+          <ul>
+            <li>
+              <h2>Strategy</h2>
+              <p>
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li>
+              <h2>Punctuality</h2>
+              <p>
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li>
+              <h2>Diligence</h2>
+              <p>
+                Research and confirm brands with the strongest digital growth
+                opportunities and minimize risk.
+              </p>
+            </li>
+            <li>
+              <h2>Technologies</h2>
+              <p>
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Section 2 burada olusturulacak-->
+      <section>
+        <div>
+          <h3>Our Team</h3>
+          <!-- Team Pictures comes here-->
+          <div>
+            <ul>
+              <li>
+                <img
+                  src="assets/images/mark.jpg"
+                  width="140"
+                  alt="Mark Guerrero's Picture" />
+                <h4>Mark Guerrero</h4>
+                <p>Product Designer</p>
+              </li>
+              <li>
+                <img  src="assets/images/tom.jpg"
+                  width="140" alt="Tom Ford's Picture" />
+                <h4>Tom Ford</h4>
+                <p>Frontend Developer</p>
+              </li>
+              <li>
+                <img  src="assets/images/camila.jpg"
+                  width="140" alt="Camila Garcia's Picture" />
+                <h4>Camila Garcia</h4>
+                <p>Marketing</p>
+              </li>
+              <li>
+                <img  src="assets/images/daniel.jpg"
+                  width="140" alt="Daniel Wilson's Picture" />
+                <h4>Daniel Wilson</h4>
+                <p>UI Designer</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <section>
-        <h3>Ek Bölüm</h3>
-        <p>Section içeriği burada.</p>
-    </section>
-
+    <!--main ias over -->
+    <!--footer-->
     <footer>
-        <p>Footer içeriği burada.</p>
+      <div>
+        <ul>
+          <li><img src="logo" alt="logo" /></li>
+          <li>
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
+    <!--footer is over -->
+  </body>
 </html>
